@@ -8,12 +8,12 @@ Atualmente, um problema muito recorrente em algoritmos de machine learning utili
 Segue o diagrama de blocos que descreve a solução:
 <img width="755" alt="image" src="https://github.com/anaclaralmz/pesquisa-aprendizado-continuo/assets/99202282/fa0b75f9-93f8-4932-a166-d00f2c5c30b5">
 ### Descrição dos blocos
-- Usuário: responsável por fazer a interação com o sistema conversacional, e enviar um input que irá acionar o algoritmo desenvolvido para achar uma resposta, através do cálculo da similaridade do cosseno entre o input e os documentos da base de dados;
-- Sistema NLP: responsável pelo tratamento de textos, tanto recebidos como input do usuário, como o tratamento dos documentos mantidos na base de dados. É utilizado sempre que um novo documento é adicionado à base de dados;
-- Banco de dados: armazena todos os dados coletados, inclusive do web scraping, e envia os documentos similares à busca para o backend da aplicação;
-- Backend: recebe documentos do banco de dados, e os direciona para o front-end (usuário);
-- Feedbacks: responsáveis por disparar -se for negativo- um evento que ativa o web scraping, para atualizar a base de dados, ja que os dados ja existêntes não são relevantes o suficiente para atender à pergunta realizada;
-- Web scraping: faz uma busca na web, em sites confiáveis pré-definidos, utilizando o texto de input ja tratado, para coletar novos dados em relação àquele contexto, e os envia para a base de dados.
+- <b>Usuário</b>: responsável por fazer a interação com o sistema conversacional, e enviar um input que irá acionar o algoritmo desenvolvido para achar uma resposta, através do cálculo da similaridade do cosseno entre o input e os documentos da base de dados;
+- <b>Sistema NLP</b>: responsável pelo tratamento de textos, tanto recebidos como input do usuário, como o tratamento dos documentos mantidos na base de dados. É utilizado sempre que um novo documento é adicionado à base de dados;
+- <b>Banco de dados</b>: armazena todos os dados coletados, inclusive do web scraping, e envia os documentos similares à busca para o backend da aplicação;
+- <b>Backend</b>: recebe documentos do banco de dados, e os direciona para o front-end (usuário);
+- <b>Feedbacks</b>: responsáveis por disparar -se for negativo- um evento que ativa o web scraping, para atualizar a base de dados, ja que os dados ja existêntes não são relevantes o suficiente para atender à pergunta realizada;
+- <b>Web scraping</b>: faz uma busca na web, em sites confiáveis pré-definidos, utilizando o texto de input ja tratado, para coletar novos dados em relação àquele contexto, e os envia para a base de dados.
 
 ## Conclusão
 A abordagem de aprendizado contínuo proposta pode ajudar a manter sistemas conversacionais atualizados e eficazes ao longo do tempo. No entanto, requer um esforço significativo em termos de coleta de dados, detecção de concept drift, treinamento de modelos e avaliação contínua, além de uma arquitetura bem elaborada para sustentar esse processo sem prejudicar a latência e disponibilidade do sistema. 
