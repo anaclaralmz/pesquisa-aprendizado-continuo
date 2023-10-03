@@ -6,7 +6,8 @@ Atualmente, um problema muito recorrente em algoritmos de machine learning utili
 É proposta a solução de um sistema conversacional de aprendizagem contínua que, a partir da utilização da técnica de Web Scrapping, é capaz de coletar dados e manter sua base atualizada constantemente, a partir da análise de feedbacks negativos ou positivos enviados por usuários quando finalizam uma conversa, apontando exatamente aonde a solução deve agir para coletar dados mais adequados para aquele contexto.
 
 Segue o diagrama de blocos que descreve a solução:
-<img width="755" alt="image" src="https://github.com/anaclaralmz/pesquisa-aprendizado-continuo/assets/99202282/fa0b75f9-93f8-4932-a166-d00f2c5c30b5">
+<img width="860" alt="image" src="https://github.com/anaclaralmz/pesquisa-aprendizado-continuo/assets/99202282/d21f2a0e-fd6f-4140-8074-f515f45671e1">
+
 ### Descrição dos blocos
 - <b>Usuário</b>: responsável por fazer a interação com o sistema conversacional, e enviar um input que irá acionar o algoritmo desenvolvido para achar uma resposta, através do cálculo da similaridade do cosseno entre o input e os documentos da base de dados;
 - <b>Sistema NLP</b>: responsável pelo tratamento de textos, tanto recebidos como input do usuário, como o tratamento dos documentos mantidos na base de dados. É utilizado sempre que um novo documento é adicionado à base de dados;
